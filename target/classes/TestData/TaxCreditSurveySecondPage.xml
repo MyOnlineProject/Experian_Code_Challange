@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tax Credit Survey Second Page">
+    <parameter name="" value=""></parameter>
+    <test name="Validate the field on first page of Survey form">
+        <classes>
+            <class
+                    name="Tests.TaxCreditSurveySecondPageTest">
+                <methods>
+                    <include name=""/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

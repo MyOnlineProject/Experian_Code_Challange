@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tax Credit Survey First Page">
+    <test name="Validate the field on first page of Survey form">
+        <classes>
+            <class
+                    name="Tests.TaxCreditSurveyDeclarationPageTest">
+                <methods>
+                    <parameter name="First Name" value="Raju"></parameter>
+                    <parameter name="Last Name" value="Karmakar"></parameter>
+                    <parameter name="Email Address" value="rajukarmakar1454@gmail.com"></parameter>
+                    <parameter name="Street Address" value="Ramanthapur"></parameter>
+                    <parameter name="City" value="Hyderabad"></parameter>
+                    <parameter name="Zip Code" value="91754"></parameter>
+                    <include name="VerifyThatUserNavigatesToEmployerServices"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
