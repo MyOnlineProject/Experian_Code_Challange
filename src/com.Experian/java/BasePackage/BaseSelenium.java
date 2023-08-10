@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import java.io.FileInputStream;
@@ -48,11 +48,6 @@ public class BaseSelenium {
         driver.get(url);
 
         return driver;
-    }
-
-    @AfterTest
-    public static void tearDown(){
-        driver.close();
     }
 
     public static void waitForElementPresent(By by) {

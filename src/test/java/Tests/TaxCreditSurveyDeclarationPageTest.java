@@ -28,9 +28,8 @@ public class TaxCreditSurveyDeclarationPageTest extends TaxCreditSurveyDeclarati
         TaxCreditSurveyDeclarationPage.submitForm();
 
         String url = driver.getCurrentUrl().split("/\\?")[0];
-        System.out.println("Final URL is "+url);
+        System.out.println("Actual URL: "+url);
 
-        //ExtentFactory.getInstance().getExtent().log(Status.INFO,"Asserting URL after submitting the form");
         Assert.assertEquals(url,"https://www.experian.com/employer-services");
 
 
